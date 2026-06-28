@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, MessageCircle, PlayCircle } from 'lucide-react';
 import { collections } from '../data/collections';
 import './ProductDetail.css';
 
 export default function ProductDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const basePath = import.meta.env.BASE_URL;
   
   useEffect(() => {
@@ -21,18 +22,26 @@ export default function ProductDetail() {
     return (
       <div className="product-not-found">
         <h2>Catalogue not found</h2>
-        <Link to="/" className="btn">Return Home</Link>
+        <a href="/" className="btn" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Return Home</a>
       </div>
     );
   }
+
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/');
+    setTimeout(() => {
+      document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  };
 
   return (
     <div className="product-detail-page">
       <div className="product-hero">
         <img src={`${basePath}${product.image}`} alt={product.title} className="product-hero-image" />
-        <Link to="/" className="back-btn glass">
+        <a href="/" onClick={handleBack} className="back-btn glass">
           <ArrowLeft size={20} /> Back to Catalogues
-        </Link>
+        </a>
       </div>
       
       <div className="product-info-container container">

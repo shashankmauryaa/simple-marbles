@@ -4,9 +4,11 @@ import './Footer.css';
 
 interface FooterProps {
   onOpenAbout?: () => void;
+  onOpenTerms?: () => void;
+  onOpenPrivacy?: () => void;
 }
 
-export default function Footer({ onOpenAbout }: FooterProps) {
+export default function Footer({ onOpenAbout, onOpenTerms, onOpenPrivacy }: FooterProps) {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -26,6 +28,20 @@ export default function Footer({ onOpenAbout }: FooterProps) {
     e.preventDefault();
     if (onOpenAbout) {
       onOpenAbout();
+    }
+  };
+
+  const handleTermsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (onOpenTerms) {
+      onOpenTerms();
+    }
+  };
+
+  const handlePrivacyClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (onOpenPrivacy) {
+      onOpenPrivacy();
     }
   };
 
@@ -108,9 +124,9 @@ export default function Footer({ onOpenAbout }: FooterProps) {
           <p>
             &copy; {new Date().getFullYear()} LuxeMarble. 
             <span className="footer-separator">&bull;</span> 
-            <a href="#">Terms & Conditions</a> 
+            <a href="#terms" onClick={handleTermsClick}>Terms & Conditions</a> 
             <span className="footer-separator">&bull;</span> 
-            <a href="#">Privacy Policy</a>
+            <a href="#privacy" onClick={handlePrivacyClick}>Privacy Policy</a>
           </p>
         </div>
       </div>
