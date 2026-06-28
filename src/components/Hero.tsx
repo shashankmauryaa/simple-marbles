@@ -22,13 +22,13 @@ export default function Hero() {
           </p>
           <div className="hero-cta">
             <button 
-              onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className="btn"
             >
               Explore Collection
             </button>
             <button 
-              onClick={() => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              onClick={() => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className="btn btn-outline glass"
             >
               Our Process
