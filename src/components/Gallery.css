@@ -1,12 +1,16 @@
 .gallery-section {
   background-color: var(--color-bg);
   border-top: 1px solid var(--color-border);
-  padding-bottom: var(--spacing-xxl); /* Give it some space since marquee breaks out of container */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
 }
 
 .gallery-header {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
   max-width: 700px;
   margin-inline: auto;
 }
