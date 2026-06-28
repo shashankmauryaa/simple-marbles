@@ -1,7 +1,34 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Footer.css';
 
-export default function Footer() {
+interface FooterProps {
+  onOpenAbout?: () => void;
+}
+
+export default function Footer({ onOpenAbout }: FooterProps) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    } else {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (onOpenAbout) {
+      onOpenAbout();
+    }
+  };
+
   return (
     <footer id="contact" className="footer section footer-section">
       <div className="container footer-container">
@@ -35,17 +62,17 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4 className="col-heading">PAGES</h4>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/catalogues">Catalogues</a>
-            <a href="/gallery">Gallery</a>
+            <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')}>Home</a>
+            <a href="#about" onClick={handleAboutClick}>About</a>
+            <a href="#collection" onClick={(e) => handleNavClick(e, 'collection')}>Catalogues</a>
+            <a href="#gallery" onClick={(e) => handleNavClick(e, 'gallery')}>Gallery</a>
           </div>
 
           <div className="footer-col">
             <h4 className="col-heading">GET STARTED</h4>
-            <a href="/catalogues">View Collection</a>
-            <a href="/gallery">Project Gallery</a>
-            <a href="#contact">Request Quote</a>
+            <a href="#collection" onClick={(e) => handleNavClick(e, 'collection')}>View Collection</a>
+            <a href="#gallery" onClick={(e) => handleNavClick(e, 'gallery')}>Project Gallery</a>
+            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Request Quote</a>
           </div>
 
           <div className="footer-col">

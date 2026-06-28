@@ -9,14 +9,14 @@ import Process from './components/Process';
 import Footer from './components/Footer';
 import ProductDetail from './pages/ProductDetail';
 
-function Home() {
+function Home({ onOpenAbout }: { onOpenAbout: () => void }) {
   return (
     <>
       <Hero />
       <Collection />
       <Gallery />
       <Process />
-      <Footer />
+      <Footer onOpenAbout={onOpenAbout} />
     </>
   );
 }
@@ -30,7 +30,7 @@ function App() {
       <AboutModal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
       
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home onOpenAbout={() => setIsAboutOpen(true)} />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
