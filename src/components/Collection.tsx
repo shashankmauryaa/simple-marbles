@@ -8,19 +8,19 @@ const collections = [
     id: 'carrara',
     title: 'Classic Carrara',
     description: 'Soft feathery grey veining on pristine white. The quintessential Italian marble for timeless interiors.',
-    image: '/images/carrara.png',
+    image: `${import.meta.env.BASE_URL}images/carrara.png`,
   },
   {
     id: 'onyx',
     title: 'Luminous Onyx',
     description: 'Translucent and warm. A glowing masterpiece of nature that commands attention in any space.',
-    image: '/images/onyx.png',
+    image: `${import.meta.env.BASE_URL}images/onyx.png`,
   },
   {
     id: 'travertine',
     title: 'Warm Travertine',
     description: 'Subtle textures and earthy tones. Perfect for creating inviting, luxurious, and organic environments.',
-    image: '/images/travertine.png',
+    image: `${import.meta.env.BASE_URL}images/travertine.png`,
   }
 ];
 
