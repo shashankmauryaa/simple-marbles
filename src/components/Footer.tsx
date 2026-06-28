@@ -5,7 +5,7 @@ export default function Footer() {
     <footer id="contact" className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <h2>Lumina Stone</h2>
+          <h2>LuxeMarble</h2>
           <p>Curators of the world's finest premium marble, delivering unparalleled elegance to architectural masterpieces since 1998.</p>
         </div>
         
@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="footer-links">
             <h3>Contact</h3>
             <ul>
-              <li><a href="mailto:contact@luminastone.com">contact@luminastone.com</a></li>
+              <li><a href="mailto:contact@luxemarble.com">contact@luxemarble.com</a></li>
               <li><a href="tel:+18001234567">+1 (800) 123-4567</a></li>
               <li><p>123 Luxury Ave, Design District</p></li>
               <li><p>New York, NY 10001</p></li>
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <p>&copy; {new Date().getFullYear()} Lumina Stone. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} LuxeMarble. All rights reserved.</p>
           <div className="footer-legal">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>
