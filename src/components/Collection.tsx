@@ -4,34 +4,9 @@ import { ArrowRight, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Collection.css';
 
-export const collections = [
-  {
-    id: 'carrara',
-    title: 'Classic Carrara',
-    category: 'White',
-    description: 'Soft feathery grey veining on pristine white. The quintessential Italian marble for timeless interiors.',
-    thickness: '18mm',
-    image: 'images/carrara.png',
-  },
-  {
-    id: 'onyx',
-    title: 'Luminous Onyx',
-    category: 'Warm',
-    description: 'Translucent and warm. A glowing masterpiece of nature that commands attention in any space.',
-    thickness: '20mm',
-    image: 'images/onyx.png',
-  },
-  {
-    id: 'travertine',
-    title: 'Warm Travertine',
-    category: 'Warm',
-    description: 'Subtle textures and earthy tones. Perfect for creating inviting, luxurious, and organic environments.',
-    thickness: '18mm',
-    image: 'images/travertine.png',
-  }
-];
+import { collections } from '../data/collections';
 
-const categories = ['All', 'White', 'Warm', 'Dark'];
+const categories = ['All', 'White', 'Warm', 'Italian', 'Indian', 'Granite', 'Quartz'];
 
 export default function Collection() {
   const basePath = import.meta.env.BASE_URL;

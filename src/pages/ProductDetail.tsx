@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MessageCircle } from 'lucide-react';
-import { collections } from '../components/Collection';
+import { ArrowLeft, MessageCircle, PlayCircle } from 'lucide-react';
+import { collections } from '../data/collections';
 import './ProductDetail.css';
 
 export default function ProductDetail() {
@@ -45,22 +45,36 @@ export default function ProductDetail() {
           <div className="product-description">
             <h3>Overview</h3>
             <p>{product.description}</p>
-            <p>
-              Mined from the deepest and most pristine quarries, this magnificent stone offers unparalleled durability and visual appeal. Ideal for countertops, flooring, and stunning architectural features. 
-            </p>
+
+            <div className="video-placeholder">
+              <div className="video-overlay glass">
+                <PlayCircle size={48} className="play-icon" />
+                <span>Product Showcase Video</span>
+              </div>
+            </div>
+            
+            <div className="applications-section">
+              <h3>Applications</h3>
+              <div className="applications-tags">
+                {product.applications.map((app, index) => (
+                  <span key={index} className="app-tag">{app}</span>
+                ))}
+              </div>
+            </div>
           </div>
           
           <div className="product-specs glass">
             <h3>Specifications</h3>
             <ul>
-              <li><strong>Material:</strong> 100% Natural Marble</li>
-              <li><strong>Finish:</strong> Polished / Honed</li>
-              <li><strong>Thickness:</strong> 20mm / 30mm</li>
-              <li><strong>Origin:</strong> Premium Global Quarries</li>
+              <li><strong>Product Code:</strong> {product.code}</li>
+              <li><strong>Color:</strong> {product.color}</li>
+              <li><strong>Finish:</strong> {product.finish}</li>
+              <li><strong>Thickness:</strong> {product.thickness}</li>
+              <li><strong>Material:</strong> {product.category}</li>
             </ul>
             
             <a 
-              href={`https://wa.me/84948973901?text=I'm%20interested%20in%20the%20${encodeURIComponent(product.title)}%20marble.`} 
+              href={`https://wa.me/84948973901?text=I'm%20interested%20in%20${encodeURIComponent(product.title)}%20(${product.code}).`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn whatsapp-btn"
