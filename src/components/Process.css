@@ -1,0 +1,75 @@
+.process-section {
+  background-color: #f4f4f4; /* Slightly darker than main bg for contrast */
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.process-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 900px) {
+  .process-layout {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.process-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.process-text h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.process-description {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.process-steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 600px;
+}
+
+.step-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6); /* Glassy feel */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.step-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.step-content p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
