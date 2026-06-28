@@ -55,9 +55,6 @@ export default function Navbar({ onOpenAbout }: NavbarProps) {
             
             <ul className="navbar-links">
               <li>
-                <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')}>Home</a>
-              </li>
-              <li>
                 <button onClick={onOpenAbout} className="navbar-btn-link">About</button>
               </li>
               <li>
