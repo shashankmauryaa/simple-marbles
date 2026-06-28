@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
 import './Hero.css';
 
 export default function Hero() {
@@ -37,21 +36,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      <motion.div 
-        className="scroll-indicator"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-      >
-        <p>Scroll to explore</p>
-        <motion.div 
-          animate={{ y: [0, 10, 0] }} 
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
-          <ArrowDown size={20} />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

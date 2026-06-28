@@ -36,7 +36,7 @@ export default function Process() {
             <p className="process-description">
               From the heart of the mountain to the center of your home, our process is defined by an uncompromising commitment to quality and artistry. We believe that every piece of marble tells a unique story of the earth's history.
             </p>
-            <a href="#contact" className="btn">Get in Touch</a>
+            <a href="https://wa.me/84948973901" target="_blank" rel="noopener noreferrer" className="btn">Get in Touch (WhatsApp)</a>
           </motion.div>
 
           <div className="process-steps">
