@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ArrowLeft, MessageCircle, PlayCircle } from 'lucide-react';
+import { ArrowLeft, MessageCircle } from 'lucide-react';
 import { collections } from '../data/collections';
 import './ProductDetail.css';
 
@@ -55,12 +55,27 @@ export default function ProductDetail() {
             <h3>Overview</h3>
             <p>{product.description}</p>
 
-            <div className="video-placeholder">
-              <div className="video-overlay glass">
-                <PlayCircle size={48} className="play-icon" />
-                <span>Product Showcase Video</span>
+            {product.videos && product.videos.length > 0 && (
+              <div className="product-media-videos">
+                {product.videos.map((vid, idx) => (
+                  <video key={`vid-${idx}`} className="product-video" controls muted loop preload="metadata">
+                    <source src={`${basePath}${vid}`} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
               </div>
-            </div>
+            )}
+            
+            {product.images && product.images.length > 1 && (
+              <div className="product-media-images">
+                <h3>Gallery</h3>
+                <div className="media-image-grid">
+                  {product.images.map((img, idx) => (
+                    <img key={`img-${idx}`} src={`${basePath}${img}`} alt={`${product.title} gallery ${idx + 1}`} className="gallery-img" loading="lazy" />
+                  ))}
+                </div>
+              </div>
+            )}
             
             <div className="applications-section">
               <h3>Applications</h3>

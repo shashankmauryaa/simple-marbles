@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Footer.css';
 
@@ -54,22 +54,14 @@ export default function Footer({ onOpenAbout, onOpenTerms, onOpenPrivacy }: Foot
           <div className="footer-col brand-col">
             <h2 className="contact-heading">Contact Us</h2>
             <p className="footer-italic">
-              Let's discuss how LuxeMarble can elevate your next project.
+              Let's discuss how WHITE MARBLE VIETNAM can elevate your next project.
             </p>
             <p className="footer-desc">
               We are defined by an uncompromising commitment to quality and artistry. We believe that every piece of marble tells a unique story.
             </p>
             
             <div className="footer-social-inline">
-              <a href="#" className="social-link" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                Instagram
-              </a>
-              <a href="#" className="social-link" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                Facebook
-              </a>
-              <a href="https://wa.me/84948973901" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
+              <a href="https://wa.me/84948973901" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp (Ravi Chandank)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 WhatsApp
               </a>
@@ -93,26 +85,22 @@ export default function Footer({ onOpenAbout, onOpenTerms, onOpenPrivacy }: Foot
 
           <div className="footer-col">
             <h4 className="col-heading">REACH OUT</h4>
-            <a href="mailto:contact@luxemarble.com" className="icon-link">
-              <Mail size={16} className="contact-icon" /> 
-              contact@luxemarble.com
-            </a>
-            <a href="https://wa.me/84948973901" className="icon-link">
+            <a href="tel:+84948973901" className="icon-link">
               <Phone size={16} className="contact-icon" /> 
-              +84 94 897 39 01
+              +84 948973901 (RAVI)
+            </a>
+            <a href="tel:+84989890303" className="icon-link">
+              <Phone size={16} className="contact-icon" /> 
+              +84 989890303 (KAMAL)
             </a>
             <span className="icon-link location-text">
               <MapPin size={16} className="contact-icon map-icon" /> 
-              <span>Elu's Rd, Hanumanthappa Layout<br/>Kyalasanahalli, Bengaluru 560077</span>
+              <span><strong>OFFICE:</strong> R.1201, 12nd Floor, A5 Building - Thang Long International Village, Tran Dang Ninh Str., Dich Vong Ward, Cau Giay Dist., Hanoi, Vietnam.</span>
             </span>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.586616422709!2d77.64332211534346!3d13.061937990796335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1a5b81a5fb5b%3A0xc3b8655bd55a6d71!2sElu&#39;s%20Rd%2C%20Hanumanthappa%20Layout%2C%20Kyalasanahalli%2C%20Bengaluru%2C%20Karnataka%20560077!5e0!3m2!1sen!2sin!4v1689253592398!5m2!1sen!2sin" 
-              className="small-map"
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps Location"
-            ></iframe>
+            <span className="icon-link location-text" style={{ marginTop: '0.5rem' }}>
+              <MapPin size={16} className="contact-icon map-icon" /> 
+              <span><strong>SHOWROOM:</strong> Minh Tien, Luc Yen, Yen Bai, Lao Cai, Vietnam.</span>
+            </span>
           </div>
 
         </div>
@@ -122,7 +110,7 @@ export default function Footer({ onOpenAbout, onOpenTerms, onOpenPrivacy }: Foot
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>
-            &copy; {new Date().getFullYear()} LuxeMarble. 
+            &copy; {new Date().getFullYear()} WHITE MARBLE VIETNAM. 
             <span className="footer-separator">&bull;</span> 
             <a href="#terms" onClick={handleTermsClick}>Terms & Conditions</a> 
             <span className="footer-separator">&bull;</span> 

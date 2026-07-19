@@ -9,6 +9,7 @@ import Collection from './components/Collection';
 import Gallery from './components/Gallery';
 import Process from './components/Process';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import ProductDetail from './pages/ProductDetail';
 
 interface HomeProps {
@@ -40,6 +41,7 @@ function App() {
       <AboutModal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
       <TermsModal isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
       <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+      <FloatingWhatsApp />
       
       <Routes>
         <Route path="/" element={<Home 

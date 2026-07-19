@@ -6,7 +6,7 @@ import './Collection.css';
 
 import { collections } from '../data/collections';
 
-const categories = ['All', 'White', 'Warm', 'Italian', 'Indian', 'Granite', 'Quartz'];
+const categories = ['All', ...Array.from(new Set(collections.map(item => item.category)))];
 
 export default function Collection() {
   const basePath = import.meta.env.BASE_URL;

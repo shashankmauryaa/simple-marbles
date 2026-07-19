@@ -13,13 +13,13 @@ export default function Hero() {
           transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
           className="hero-text-wrapper"
         >
-          <h1 className="hero-title">
-            <span className="hero-title-light">Timeless Elegance.</span><br />
-            Carved in Stone.
+          <h1 className="hero-title" style={{ marginBottom: '3rem' }}>
+            <span className="hero-title-light">Premium White Marble.</span><br />
+            Direct from Vietnam.
           </h1>
-          <p className="hero-subtitle">
-            Discover the world's most exquisite premium marble collections, ethically sourced and perfectly crafted for your visionary spaces.
-          </p>
+          {/* <p className="hero-subtitle">
+            Welcome to WHITE MARBLE VIETNAM. We are a trusted supplier and exporter of premium natural white marble, providing exceptional durability and superior craftsmanship for your most ambitious architectural projects.
+          </p> */}
           <div className="hero-cta">
             <button 
               onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}

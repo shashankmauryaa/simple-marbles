@@ -30,22 +30,22 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
         </button>
         
         <div className="about-inner container">
-          <h2>Our Legacy</h2>
-          <p className="about-lead">
-            Founded in 1998, LuxeMarble has been at the forefront of the architectural stone industry, sourcing the world's most magnificent and rare marbles for elite projects across the globe.
+          <h2 style={{ textAlign: 'center' }}>About Us</h2>
+          <p className="about-lead" style={{ textAlign: 'center' }}>
+            Welcome to WHITE MARBLE VIETNAM, a trusted supplier and exporter of premium natural white marble in Vietnam. We are dedicated to providing high-quality marble products that combine timeless beauty, exceptional durability, and superior craftsmanship.
           </p>
           <div className="about-grid">
             <div className="about-column">
-              <h3>Ethical Sourcing</h3>
-              <p>We work directly with quarries in Italy, Greece, and Brazil to ensure that every slab we procure is extracted with the utmost respect for the environment and the local communities.</p>
+              <h3>Our Company</h3>
+              <p>With a strong commitment to quality and customer satisfaction, we source and process carefully selected natural stone to meet the highest industry standards. Our marble is suitable for a wide range of applications, including flooring, wall cladding, staircases, countertops, and luxury interior designs.</p>
             </div>
             <div className="about-column">
-              <h3>Master Craftsmanship</h3>
-              <p>Our state-of-the-art facility uses a blend of traditional artisan techniques and cutting-edge technology to cut, polish, and hone each stone to absolute perfection.</p>
+              <h3>Our Mission</h3>
+              <p>Our mission is to become one of Vietnam's most trusted natural stone suppliers by delivering premium-quality white marble products, creating long-term partnerships, and exceeding customer expectations through reliability, integrity, and continuous improvement.</p>
             </div>
             <div className="about-column">
-              <h3>Bespoke Service</h3>
-              <p>From private residences to grand commercial spaces, our dedicated consultants guide architects and designers to find the exact stone that brings their vision to life.</p>
+              <h3>Our Vision</h3>
+              <p>To be recognized internationally as a leading Vietnamese supplier of natural white marble, known for exceptional quality, sustainable business practices, innovation, and customer satisfaction.</p>
             </div>
           </div>
         </div>

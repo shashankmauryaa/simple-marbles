@@ -50,7 +50,8 @@ export default function Navbar({ onOpenAbout }: NavbarProps) {
         >
           <div className="navbar-container">
             <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="navbar-brand">
-              LuxeMarble
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="White Marble Vietnam Logo" className="navbar-logo" />
+              <span>White Marble Vietnam</span>
             </a>
             
             <ul className="navbar-links">

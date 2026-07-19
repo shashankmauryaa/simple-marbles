@@ -142,41 +142,45 @@
   background-color: #1DA851;
 }
 
-.video-placeholder {
-  width: 100%;
-  height: 350px;
-  background-color: var(--color-bg);
-  background-image: linear-gradient(45deg, #111 25%, transparent 25%, transparent 75%, #111 75%, #111), linear-gradient(45deg, #111 25%, transparent 25%, transparent 75%, #111 75%, #111);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  border-radius: 8px;
-  margin: var(--spacing-xl) 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.video-overlay {
+.product-media-videos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 3rem;
-  border-radius: 12px;
-  color: var(--color-text);
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0;
+}
+
+.product-video {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #000;
+  max-height: 500px;
+}
+
+.product-media-images {
+  margin: var(--spacing-xl) 0;
+}
+
+.product-media-images h3 {
+  margin-bottom: var(--spacing-md);
+}
+
+.media-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.video-overlay:hover {
-  transform: scale(1.05);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.play-icon {
-  color: var(--color-primary);
+.gallery-img:hover {
+  transform: scale(1.03);
 }
 
 .applications-section {
