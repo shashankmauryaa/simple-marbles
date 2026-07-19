@@ -16,7 +16,7 @@ export interface Product {
 export const collections: Product[] = [
   {
     "id": "fine",
-    "title": "Fine",
+    "title": "FINE GRAIN",
     "code": "WMV-001",
     "category": "White Marble",
     "description": "Elevate your interior design projects with the pristine elegance of our premium Fine Grain Slab. Exhibiting a seamless, ultra-refined texture, this striking white engineered stone provides a flawless canvas for modern minimalist aesthetics.",
@@ -29,7 +29,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/FINE/IMG20251019140756.jpg",
     "images": [
@@ -47,7 +53,7 @@ export const collections: Product[] = [
   },
   {
     "id": "galaxy",
-    "title": "Galaxy",
+    "title": "GALAXY WHITE",
     "code": "WMV-002",
     "category": "White Marble",
     "description": "Galaxy White is quite hard crystalline marble from Vientam. It has tight mesh of small crystals. Intense white colour of Vietnam White makes it very suitable for creating elegant interiors and sophisticated design combinations in both interior and exterior applications.",
@@ -60,7 +66,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/GALAXY/IMG-20250421-WA0001.jpg",
     "images": [
@@ -72,7 +84,7 @@ export const collections: Product[] = [
   },
   {
     "id": "opal",
-    "title": "Opal",
+    "title": "OPAL WHITE",
     "code": "WMV-003",
     "category": "White Marble",
     "description": "Opal White Marble is an exceptional natural white marble distinguished by its fine crystalline texture, brilliant white base, and remarkably uniform appearance. Its smaller, tightly packed crystal structure creates a cleaner, softer surface while enhancing the stone's natural brightness and elegance.",
@@ -85,7 +97,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/OPAL/IMG-20250421-WA0004.jpg",
     "images": [
@@ -97,10 +115,10 @@ export const collections: Product[] = [
   },
   {
     "id": "red",
-    "title": "Red",
+    "title": "RED GRAIN",
     "code": "WMV-004",
     "category": "Red Marble",
-    "description": "An exquisite selection of premium red marble featuring rich, deep crimson tones interspersed with striking white and gold veining. Perfect for creating bold statements in luxury interiors and exclusive architectural projects.",
+    "description": "Elevate your architectural projects with the bold, dramatic presence of Red Grain Marble. This exquisite selection features rich, deep crimson tones seamlessly interspersed with striking white and gold veining. The intense coloration and refined grain structure make it an exceptional choice for creating powerful statement pieces, luxury feature walls, and exclusive interior focal points.",
     "color": "White",
     "finish": "Polished, Honed, Leather, Brushed",
     "thickness": "18 mm, 20 mm, 30 mm",
@@ -110,7 +128,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/RED/IMG20260304151401.jpg",
     "images": [
@@ -127,7 +151,7 @@ export const collections: Product[] = [
   },
   {
     "id": "snow",
-    "title": "Snow",
+    "title": "SNOW WHITE",
     "code": "WMV-005",
     "category": "White Marble",
     "description": "Snow White Marble is a premium natural white marble celebrated for its clean, uniform appearance and exceptionally smooth surface texture. Unlike crystal-rich marbles, this variety features a plain white background with only subtle, minute natural mineral structures, creating a refined and elegant aesthetic.",
@@ -140,7 +164,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/SNOW/IMG-20260217-WA0005.jpg",
     "images": [
@@ -152,7 +182,7 @@ export const collections: Product[] = [
   },
   {
     "id": "swarovski",
-    "title": "Swarovski",
+    "title": "SWAROVSKI",
     "code": "WMV-006",
     "category": "Premium",
     "description": "Swarovski White Marble is one of our signature premium white marble collections, distinguished by its large crystalline structure, uniform crystal distribution, and naturally luminous appearance. The consistent crystal pattern creates a sophisticated surface that reflects light beautifully, giving every space a bright, luxurious, and timeless character.",
@@ -165,7 +195,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/SWAROVSKI/IMG_20260303_142728.jpg",
     "images": [
@@ -211,10 +247,10 @@ export const collections: Product[] = [
   },
   {
     "id": "veins",
-    "title": "Veins",
+    "title": "VEINS",
     "code": "WMV-007",
     "category": "Specialty",
-    "description": "A stunning marble collection characterized by dramatic, pronounced veining patterns that flow naturally across the stone's surface, offering exceptional book-matching possibilities and unparalleled visual depth.",
+    "description": "Veins is a stunning premium marble collection characterized by its dramatic, pronounced veining patterns that flow naturally and artistically across the stone's surface. The bold, contrasting veins against a crisp white background offer exceptional book-matching possibilities and unparalleled visual depth, transforming any surface into a breathtaking, dynamic work of art.",
     "color": "White",
     "finish": "Polished, Honed, Leather, Brushed",
     "thickness": "18 mm, 20 mm, 30 mm",
@@ -224,7 +260,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/hero.png",
     "images": ["images/hero.png"],
@@ -232,10 +274,10 @@ export const collections: Product[] = [
   },
   {
     "id": "white",
-    "title": "White",
+    "title": "JUST WHITE",
     "code": "WMV-008",
     "category": "White Marble",
-    "description": "Our timeless classic pure white marble collection. Offering a luminous and serene aesthetic, this stone brings an airy, sophisticated elegance to any modern or traditional space.",
+    "description": "Just White is our timeless, pure white marble collection celebrated for its pristine luminosity and serene aesthetic. Featuring a brilliantly clear white background with a highly refined crystal structure, this stone brings an airy, sophisticated elegance to any environment, serving as the perfect minimalist foundation for both modern and traditional luxury spaces.",
     "color": "White",
     "finish": "Polished, Honed, Leather, Brushed",
     "thickness": "18 mm, 20 mm, 30 mm",
@@ -245,7 +287,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/WHITE/IMG20251106100559.jpg",
     "images": [
@@ -282,7 +330,7 @@ export const collections: Product[] = [
   },
   {
     "id": "lasa",
-    "title": "Lasa",
+    "title": "LASA WHITE",
     "code": "WMV-009",
     "category": "White Marble",
     "description": "Lasa White is a serene variation of our white marble with structured veining. It features a striking white background with consistent, lighter diagonal veining throughout the slab. Often used for interior flooring and bathroom cladding as it complements bolder elements without overshadowing them.",
@@ -295,7 +343,13 @@ export const collections: Product[] = [
       "Bathroom Walls & Vanity Tops",
       "Kitchen Countertops & Islands",
       "Staircases",
-      "Hotel Lobbies"
+      "Hotel Lobbies",
+      "Reception Counters",
+      "Feature Walls",
+      "Retail & Commercial Interiors",
+      "Fireplace Surrounds",
+      "Custom Furniture",
+      "High-End Residential projects"
     ],
     "image": "images/hero.png",
     "images": ["images/hero.png"],

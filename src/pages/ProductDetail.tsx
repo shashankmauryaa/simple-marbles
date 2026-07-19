@@ -93,6 +93,7 @@ export default function ProductDetail() {
               <li><strong>Product Code:</strong> {product.code}</li>
               <li><strong>Color:</strong> {product.color}</li>
               <li><strong>Finish:</strong> {product.finish}</li>
+              <li><strong>Offering:</strong> Block, Slabs, Tiles and Cut to sizes</li>
               <li><strong>Thickness:</strong> {product.thickness}</li>
               <li><strong>Material:</strong> {product.category}</li>
             </ul>
